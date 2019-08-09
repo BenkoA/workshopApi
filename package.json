@@ -1,0 +1,25 @@
+{
+	"devDependencies": {
+		"axios": "^0.19.0",
+		"codeceptjs": "^2.1.5",
+		"selenium-standalone": "^6.16.0",
+		"webdriverio": "^5.10.1"
+	},
+	"scripts": {
+		"testAll": "retries=2 codeceptjs run --steps --grep @trello",
+		"testCards": "retries=2 codeceptjs run --steps --grep @cards",
+		"debug": "retries=0 codeceptjs run --steps --verbose",
+		"testWithAllure": "codeceptjs run --plugins allure --steps"
+	},
+	"dependencies": {
+		"allure-commandline": "^2.9.0",
+		"assert": "^1.5.0",
+		"casual": "^1.6.2",
+		"chai": "^4.2.0",
+		"http-status-codes": "^1.3.2",
+		"mocha": "^5.2.0",
+		"mocha-junit-reporter": "^1.22.0",
+		"mocha-multi": "^1.1.0",
+		"webdriver-manager": "^12.1.4"
+	}
+}

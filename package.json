@@ -8,6 +8,7 @@
   "scripts": {
     "testAll": "retries=2 codeceptjs run --steps",
     "testCards": "retries=2 codeceptjs run --steps --grep @cards",
+    "testCreateCards": "retries=2 codeceptjs run --steps --grep @createCards",
     "testLists": "retries=2 codeceptjs run --steps --grep @lists",
     "debug": "retries=0 codeceptjs run --steps --verbose",
     "testWithAllure": "codeceptjs run --plugins allure --steps && allure serve output",

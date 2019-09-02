@@ -7,3 +7,10 @@ Framework to test the APIs via codeceptJS
 4) You can run all tests via the `npm run testAll` command
 
 
+When you're checking the tests, you should view them in the following order:
+1) trelloListTest.js
+2) trelloCardTest.js
+3) trelloCreateCardTest.js
+
+if you view them in this order, you should see that for example the trelloCardTest.js has already some improvements in place when comparing it to trelloListTests.js. 
+Same for trelloCreateCardTest.js ;)
